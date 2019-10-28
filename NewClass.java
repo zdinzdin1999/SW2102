@@ -47,10 +47,41 @@ public class NewClass {
 
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in); 
-        System.out.print("Input : "); 
-        String s = inp.nextLine(); 
+//        System.out.print("Input : "); 
+//        String s = inp.nextLine(); 
 //        System.out.println(repeatfunc("I want to to go to the the the zoo"));
+//        System.out.println(repeatfunc(s));
+        
+        //Case 1:
+        System.out.println("Case 1: I want to go to to the zoo");
+        System.out.println("Expect out : I want to go REPEAT the zoo ");
+        System.out.println("Release output: " + repeatfunc("I want to go to to the zoo"));
+        System.out.println("======================================================================");
+        //Case 2:
+        System.out.println("Case 2: I want to go to to to the zoo");
+        System.out.println("Expect out : I want to go REPEAT the zoo ");
+        System.out.println("Release output: " + repeatfunc("I want to go to to to  the zoo"));
+        System.out.println("======================================================================");
+        //Case 3: 
+        System.out.println("Case 3: I I  want to go to the zoo ");
+        System.out.println("Expect out : REPEAT want to go to the zoo ");
+        System.out.println("Release output: " + repeatfunc("I I  want to go to the zoo"));
+        System.out.println("======================================================================");
+        //Case 4: 
+        System.out.println("Case 4: I want to go to the zoo zoo zoo");
+        System.out.println("Expect output : I want to go REPEAT the zoo ");
+        System.out.println("Release output: " + repeatfunc("I I  want to go to the zoo"));
+        System.out.println("======================================================================");
+        //Case 5: 
+        System.out.println("Case 5: I want to go GO to the zoo ");
+        System.out.println("Expect output : I want to  REPEAT to the zoo ");
+        System.out.println("Release output: " + repeatfunc("I want to go GO to the zoo "));
+        System.out.println("======================================================================");
+        //Case 6: 
+        System.out.println("Case 6: Input : "); 
+        String s = inp.nextLine(); 
         System.out.println(repeatfunc(s));
+        
 
 
     }
